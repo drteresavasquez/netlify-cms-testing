@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: drteresavasquez/netlify-cms-testing
+
+media_folder: media_folder
+
+collections:
+  - name: post
+    label: Post
+    folder: posts
+    create: true
+    fields:
+      - {name: title, label: Title}
+      - {name: body, label: Body, widget: markdown}
+  - name: page
+    label: Page
+    folder: page
+    create: true
+    fields:
+      - {name: title, label: Title}
+      - {name: body, label: Body, widget: markdown}
